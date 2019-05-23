@@ -1,33 +1,35 @@
-.App {
-  text-align: center;
+.center{
+display:flex;
+justify-content: center;
+flex-flow: row wrap;
+
+}
+.particles{
+  z-index:-1;
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+
+.wrapper {
+  display:flex;
+  flex-flow: column;
+  justify-content:space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.inside {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
   }
-  to {
-    transform: rotate(360deg);
-  }
+{
+  /* An element with position: fixed; is positioned relative to the viewport,
+  which means it always stays in the same place even if the page is scrolled.
+   The top, right, bottom, and left properties are used to position the element */
 }
